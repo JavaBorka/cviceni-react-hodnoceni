@@ -31,6 +31,7 @@ Logiku fungování zařídíme tak, že tentokrát hvězdičky nebudou mít vlas
 Upravte komponentu Star tak, aby místo stavu glowing používala prop jménem glowing. Zatím zakomentujte funkci pro onClick, která nám v tuto chvíli přestane fungovat. Vyzkoušejte si však, že můžete jednotlivé hvězdičky rozsvítit nastavením prop glowing v kódu komponenty Rating.
 
 Nyní využijeme stavu value v komponentě Rating. Stačí si uvědomit, že například první hvězdička má svítit, když je hodnota value větší nebo rovna 1. Takže můžeme napsat takovouto podmínku.
+
 <Star glowing={value >= 1} // zbytek props....
 
 Upravte podmínky u všech hvězdiček tak, aby svítily ve správnou chvíli. Zkuste si nastavit výchozí stav na různé hodnoty a vyzkoušejte, že se hvězdičky rozsvítí správně.
