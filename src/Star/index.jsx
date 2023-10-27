@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import './style.css';
 
-const Star = ({onGlow, onDim}) => {
-  const [glowing, setGlowing] = useState(false);
+const Star = ({glowing, rating, onSelect}) => {
   
   const starClass = glowing
     ? 'rating__star rating__star--on'
@@ -12,8 +10,7 @@ const Star = ({onGlow, onDim}) => {
     <div 
       className={starClass}
       onClick={() => {
-        setGlowing(!glowing)
-        !glowing ? onGlow() :onDim()
+        onSelect(rating)
       }}
     >    
     </div>

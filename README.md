@@ -26,7 +26,7 @@ Navážeme na úložku s hodnocením a zařídíme, aby se při kliknutí na hv�
 
 Logiku fungování zařídíme tak, že tentokrát hvězdičky nebudou mít vlastní stav. Jejich rozsvěcení a zhasínání bude řídit rodičovaská komponenta `Rating` pomocí stavu a props.
 
-Upravte komponentu `Star` tak, aby místo stavu ``glowing`` používala prop jménem `glowing`. Zatím zakomentujte funkci pro `onClick`, která nám v tuto chvíli přestane fungovat. Vyzkoušejte si však, že můžete jednotlivé hvězdičky rozsvítit nastavením prop `glowing` v kódu komponenty `Rating`.
+Upravte komponentu `Star` tak, aby místo stavu `glowing` používala prop jménem `glowing`. Zatím zakomentujte funkci pro `onClick`, která nám v tuto chvíli přestane fungovat. Vyzkoušejte si však, že můžete jednotlivé hvězdičky rozsvítit nastavením prop `glowing` v kódu komponenty `Rating`.
 
 Nyní využijeme stavu `value` v komponentě `Rating`. Stačí si uvědomit, že například první hvězdička má svítit, když je hodnota `value` větší nebo rovna 1. Takže můžeme napsat takovouto podmínku.
 
